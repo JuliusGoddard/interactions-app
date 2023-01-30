@@ -8,7 +8,7 @@ const Interactions = () => {
   const [display, setDisplay] = useState(false)
 
   const getData = async() => {
-    const data = await axios.get('http://substantiveresearch.pythonanywhere.com/')
+    const data = await axios.get('https://substantiveresearch.pythonanywhere.com/')
     setData(data)
   }
 

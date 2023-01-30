@@ -12,9 +12,9 @@ PLAN FOR PROJECT
 10. Add Header and Footer
 11. Add "Show Data" button for UI so that users can show or hide the data using React.useState(true)
 12. Install CSS preprocesser: TailwindCSS - configured as per documentation on medium.com (NOT the official Tailwind Documentation)
-13. Style All components
+13. Style all components
 14. Run tests and Lint and correct all mistakes/errors
-15. Set up Simple workflow to ensure CI/CD
+15. Set up Simple workflow to ensure CI/CD (ensures lint + tests pass on each push to Github)
 16. Initialize git repository
 17. Deploy to Netlify for Production
 
