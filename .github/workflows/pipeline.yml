@@ -26,11 +26,4 @@ jobs:
           command: npm run test:e2e
           wait-on: http://localhost:3000
       
-  tag_release:
-    needs: [simple_deployment_pipeline]
-    runs-on: ubuntu-20.04
-    steps:
-    - uses: actions/checkout@v3
-      with:
-        fetch-depth: '0'
 
