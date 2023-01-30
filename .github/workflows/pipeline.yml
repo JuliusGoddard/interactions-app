@@ -25,11 +25,3 @@ jobs:
       with:
         fetch-depth: '0'
 
-    - name: Bump version and push tag
-      uses: anothrNick/github-tag-action@v1
-      if: ${{ github.event_name == 'push'   && !contains(join(github.event.commits.*.message, ' '), '#skip') }}
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        DEFAULT_BUMP: patch
-        RELEASE_BRANCHES: master
-        WITH_V: true
