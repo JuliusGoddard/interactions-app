@@ -17,6 +17,8 @@ jobs:
           node-version: '16'
       - name: npm install 
         run: npm install
+      - name: lint
+        run: npx eslint . --ext .js
   tag_release:
     needs: [simple_deployment_pipeline]
     runs-on: ubuntu-20.04
